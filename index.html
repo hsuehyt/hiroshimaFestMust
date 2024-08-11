@@ -4,84 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2024廣島之旅</title>
+    <!-- Importing the Noto Sans TC font for better readability in Traditional Chinese -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
     <style>
+        /* General body styling */
         body {
-            font-family: 'Noto Sans CJK TC', sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-            padding: 20px;
-            line-height: 1.6;
+            font-family: 'Noto Sans CJK TC', sans-serif; /* Font family for Chinese characters */
+            background-color: #f9f9f9; /* Light background color for better contrast */
+            color: #333; /* Dark gray text color */
+            padding: 20px; /* Padding around the content */
+            line-height: 1.8; /* Uniform line height for consistent spacing */
         }
 
+        /* Styling for the main title */
         h1 {
             font-weight: bold;
-            color: #2c3e50;
-            text-align: center;
-            margin-bottom: 30px;
+            color: #2c3e50; /* Darker text color for the title */
+            text-align: center; /* Center-aligning the title */
+            margin-bottom: 30px; /* Space below the title */
         }
 
+        /* Remove default padding and margin from list elements */
         ul {
-            list-style-type: none;
+            list-style-type: none; /* No bullets for list items */
             padding: 0;
+            margin: 0;
         }
 
+        /* Margin for list items */
         li {
-            margin: 10px 0;
+            margin: 10px 0; /* Space between list items */
         }
 
+        /* Styling for links */
         a {
-            text-decoration: none;
-            color: #2980b9;
-            font-weight: bold;
-            transition: color 0.3s ease;
+            text-decoration: none; /* Remove underline from links */
+            color: #2980b9; /* Blue color for links */
+            font-weight: bold; /* Bold links for emphasis */
+            transition: color 0.3s ease; /* Smooth color transition on hover */
         }
 
+            /* Hover effect for links */
             a:hover {
-                color: #3498db;
+                color: #3498db; /* Lighter blue on hover */
             }
 
+        /* Indentation for sub-lists */
         .sub-list {
-            margin-left: 20px;
+            margin-left: 20px; /* Indent for sub-list items */
         }
 
         .sub-sub-list {
-            margin-left: 40px;
-            font-style: italic;
+            margin-left: 40px; /* Further indent for deeper hierarchy */
         }
 
+        /* Styling for horizontally aligned language links */
         .horizontal-links {
-            display: flex;
-            gap: 20px;
-            margin-top: 10px;
-            margin-left: 40px; /* Align with the sub-sub list */
+            display: flex; /* Flexbox for horizontal alignment */
+            gap: 20px; /* Space between language links */
+            margin-top: 0px; /* Removed space above the links */
+            margin-left: 40px; /* Align with sub-sub-list */
         }
 
+        /* Styling for sections (boxed content) */
         .section {
-            background-color: #ecf0f1;
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: #ecf0f1; /* Light gray background for sections */
+            padding: 15px; /* Padding inside the section boxes */
+            border-radius: 8px; /* Rounded corners for aesthetics */
+            margin-bottom: 20px; /* Space below each section */
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
         }
 
+        /* Styling for section titles */
         .section-title {
-            font-size: 1.2em;
-            margin-bottom: 10px;
-            color: #34495e;
+            font-size: 1.2em; /* Slightly larger font size for section titles */
+            margin-bottom: 0px; /* Removed space below section titles */
+            color: #34495e; /* Darker color for emphasis */
         }
 
+        /* Inline text styling (used for "切勿一人掃描多組") */
         .inline-text {
-            display: inline-block;
-            margin-left: 10px;
-            font-style: italic;
-            font-size: inherit;
-            color: inherit;
+            display: inline-block; /* Keep text on the same line as the link */
+            margin-left: 10px; /* Space between the link and the text */
+            font-size: inherit; /* Inherit size from surrounding text */
+            color: inherit; /* Inherit color from surrounding text */
         }
     </style>
 </head>
 <body>
+    <!-- Main title of the page -->
     <h1>2024廣島之旅</h1>
+
+    <!-- Section for itinerary items -->
     <div class="section">
         <div class="section-title">行程項目</div>
         <ul>
@@ -90,6 +104,7 @@
             </li>
             <li>
                 <a href="https://drive.google.com/drive/folders/1_iMlNeGalD12TD3rKqTY03kxfHkZW9qK?usp=sharing" target="_blank">eSIM</a>
+                <!-- Inline note next to the eSIM link -->
                 <span class="inline-text">切勿一人掃描多組</span>
                 <ul class="sub-sub-list">
                     <li><a href="https://youtu.be/VgN1QSVxN64" target="_blank">安裝eSIM教學影片</a></li>
@@ -100,6 +115,8 @@
             <li><a href="https://drive.google.com/drive/folders/1AkrxpATNhHDGDRzrHVfp09yQja0_Strb?usp=sharing" target="_blank">影展套票</a></li>
         </ul>
     </div>
+
+    <!-- Section for the Hiroshima schedule and maps -->
     <div class="section">
         <div class="section-title">廣島短片時間表與地圖</div>
         <ul class="horizontal-links">
