@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2024廣島之旅</title>
-    <!-- Importing the Noto Sans TC font for better readability in Traditional Chinese -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <!-- Importing the Noto Sans TC font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:ital,wght@0,300;0,500;1,400&display=swap" rel="stylesheet">
     <style>
         /* General body styling */
         body {
             font-family: 'Noto Sans CJK TC', sans-serif; /* Font family for Chinese characters */
             background-color: #f9f9f9; /* Light background color for better contrast */
             color: #333; /* Dark gray text color */
-            padding: 20px; /* Padding around the content */
+            padding: 5px; /* Padding around the content */
             line-height: 1.8; /* Uniform line height for consistent spacing */
         }
 
         /* Styling for the main title */
         h1 {
-            font-weight: bold;
+            font-family: 'Noto Sans CJK TC Bold', sans-serif; /* Bold weight */
             color: #2c3e50; /* Darker text color for the title */
             text-align: center; /* Center-aligning the title */
-            margin-bottom: 30px; /* Space below the title */
+            margin-bottom: 5px; /* Space below the title */
+            font-size: 2em; /* Larger font size for the main title */
         }
 
         /* Remove default padding and margin from list elements */
@@ -31,16 +32,15 @@
             margin: 0;
         }
 
-        /* Margin for list items */
+        /* General styling for list items */
         li {
-            margin: 10px 0; /* Space between list items */
+            margin: 5px 0; /* Space between list items */
         }
 
         /* Styling for links */
         a {
             text-decoration: none; /* Remove underline from links */
             color: #2980b9; /* Blue color for links */
-            font-weight: bold; /* Bold links for emphasis */
             transition: color 0.3s ease; /* Smooth color transition on hover */
         }
 
@@ -49,45 +49,56 @@
                 color: #3498db; /* Lighter blue on hover */
             }
 
-        /* Indentation for sub-lists */
-        .sub-list {
-            margin-left: 20px; /* Indent for sub-list items */
+        /* Level 1: Main section titles */
+        .section-title {
+            font-size: 1.5em; /* Larger font size for section titles */
+            color: #34495e; /* Darker color for emphasis */
+            margin-bottom: 5px; /* Space below section titles */
+            border-bottom: 2px solid #ddd; /* Underline to separate sections */
+            padding-bottom: 5px;
+            font-family: 'Noto Sans CJK TC Bold', sans-serif; /* Bold weight */
         }
 
-        .sub-sub-list {
-            margin-left: 40px; /* Further indent for deeper hierarchy */
+        /* Level 2: Subtitles within sections */
+        .sub-list li {
+            font-size: 1.2em; /* Slightly smaller font size for subtitles */
+            color: #d35400; /* Deep orange-red color */
+            margin-left: 20px; /* Indentation for level 2 items */
+            font-family: 'Noto Sans CJK TC Regular', sans-serif; /* Regular weight */
         }
 
-        /* Styling for horizontally aligned language links */
+        /* Level 3: Sub-subtitles (further details) */
+        .sub-sub-list li {
+            font-size: 1em; /* Standard font size for sub-subtitles */
+            color: #000; /* Black color for less important details */
+            margin-left: 40px; /* Further indentation for level 3 items */
+            font-family: 'Noto Sans CJK TC Light', sans-serif; /* Light weight */
+        }
+
+        /* Styling for horizontally aligned language links (inherits level 3 styling) */
         .horizontal-links {
             display: flex; /* Flexbox for horizontal alignment */
-            gap: 20px; /* Space between language links */
+            gap: 0px; /* Space between language links */
             margin-top: 0px; /* Removed space above the links */
-            margin-left: 40px; /* Align with sub-sub-list */
+            margin-left: 20px; /* Align with sub-sub-list */
         }
 
         /* Styling for sections (boxed content) */
         .section {
             background-color: #ecf0f1; /* Light gray background for sections */
-            padding: 15px; /* Padding inside the section boxes */
-            border-radius: 8px; /* Rounded corners for aesthetics */
-            margin-bottom: 20px; /* Space below each section */
+            padding: 20px; /* Padding inside the section boxes */
+            border-radius: 10px; /* Rounded corners for aesthetics */
+            margin-bottom: 5px; /* Space below each section */
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-        }
-
-        /* Styling for section titles */
-        .section-title {
-            font-size: 1.2em; /* Slightly larger font size for section titles */
-            margin-bottom: 0px; /* Removed space below section titles */
-            color: #34495e; /* Darker color for emphasis */
         }
 
         /* Inline text styling (used for "切勿一人掃描多組") */
         .inline-text {
             display: inline-block; /* Keep text on the same line as the link */
-            margin-left: 10px; /* Space between the link and the text */
-            font-size: inherit; /* Inherit size from surrounding text */
-            color: inherit; /* Inherit color from surrounding text */
+            margin-left: 5px; /* Space between the link and the text */
+            font-size: 1em; /* Match the size of level 3 items */
+            color: #000; /* Black color */
+            font-family: 'Noto Sans CJK TC Light', sans-serif; /* Light weight */
         }
     </style>
 </head>
@@ -98,14 +109,18 @@
     <!-- Section for itinerary items -->
     <div class="section">
         <div class="section-title">行程項目</div>
-        <ul>
+        <ul class="sub-list">
             <li>
                 <a href="https://drive.google.com/drive/folders/11RfF3jWyozqym7N5Im8DIpcXjGLpHYJk?usp=sharing" target="_blank">電子機票</a>
+                <ul class="sub-sub-list">
+                    <li><a href="https://www.china-airlines.com/tw/zh/fly/prepare-for-the-fly/baggage/carry-on-baggage" target="_blank">隨身行李須知</a></li>
+                    <li><a href="https://www.china-airlines.com/tw/zh/fly/prepare-for-the-fly/baggage/baggage-rules" target="_blank">託運行李須知</a></li>
+                </ul>
             </li>
             <li>
                 <a href="https://drive.google.com/drive/folders/1_iMlNeGalD12TD3rKqTY03kxfHkZW9qK?usp=sharing" target="_blank">eSIM</a>
                 <!-- Inline note next to the eSIM link -->
-                <span class="inline-text">切勿一人掃描多組</span>
+                <span class="inline-text">(切勿一人掃描多組)</span>
                 <ul class="sub-sub-list">
                     <li><a href="https://youtu.be/VgN1QSVxN64" target="_blank">安裝eSIM教學影片</a></li>
                 </ul>
@@ -120,7 +135,7 @@
     <!-- Section for the Hiroshima schedule and maps -->
     <div class="section">
         <div class="section-title">廣島短片時間表與地圖</div>
-        <ul class="horizontal-links">
+        <ul class="sub-sub-list horizontal-links">
             <li><a href="compeitionShortCN.html">中文</a></li>
             <li><a href="compeitionShortJAP.html">日文</a></li>
             <li><a href="compeitionShort.html">英文</a></li>
