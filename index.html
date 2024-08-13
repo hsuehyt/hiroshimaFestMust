@@ -68,20 +68,17 @@
         }
 
         /* Level 3: Sub-subtitles (further details) */
-        .sub-sub-list li {
-            font-size: 1em; /* Standard font size for sub-subtitles */
-            color: #000; /* Black color for less important details */
-            margin-left: 40px; /* Further indentation for level 3 items */
-            font-family: 'Noto Sans CJK TC Light', sans-serif; /* Light weight */
+        .sub-sub-list {
+            margin-left: 20px; /* Further indentation for level 3 items */
         }
 
-        /* Styling for horizontally aligned language links (inherits level 3 styling) */
-        .horizontal-links {
-            display: flex; /* Flexbox for horizontal alignment */
-            gap: 0px; /* Space between language links */
-            margin-top: 0px; /* Removed space above the links */
-            margin-left: 20px; /* Align with sub-sub-list */
-        }
+            .sub-sub-list li {
+                font-size: 1em; /* Standard font size for sub-subtitles */
+                color: #000; /* Black color for less important details */
+                font-family: 'Noto Sans CJK TC Light', sans-serif; /* Light weight */
+                display: inline; /* Display items inline for same line layout */
+                margin-right: 20px; /* Space between items on the same line */
+            }
 
         /* Styling for sections (boxed content) */
         .section {
@@ -125,6 +122,13 @@
                     <li><a href="https://youtu.be/VgN1QSVxN64" target="_blank">安裝eSIM教學影片</a></li>
                 </ul>
             </li>
+            <li>
+                <a href="#">入境QR Code</a>
+                <ul class="sub-sub-list">
+                    <li><a href="https://drive.google.com/file/d/1_WMmKOu2ozbz_0h1CKgnoQJC3WH3JR-j/view?usp=sharing" target="_blank">佑廷</a></li>
+                    <li><a href="https://drive.google.com/file/d/1kbyVs6OpGg-vbi1lZAFTQxMAl5EuRS_Y/view?usp=sharing" target="_blank">雅如</a></li>
+                </ul>
+            </li>
             <li><a href="https://drive.google.com/drive/folders/1uHAacdBKEjeSjiLDy6eayKXup-dFiPln?usp=sharing" target="_blank">機場計程車</a></li>
             <li><a href="https://drive.google.com/file/d/16fNK_4v6vuEhjTkdYaAhyaBTabr-jgqG/view?usp=sharing" target="_blank">三井入住訂單</a></li>
             <li><a href="https://drive.google.com/drive/folders/1AkrxpATNhHDGDRzrHVfp09yQja0_Strb?usp=sharing" target="_blank">影展套票</a></li>
@@ -135,7 +139,7 @@
     <!-- Section for the Hiroshima schedule and maps -->
     <div class="section">
         <div class="section-title">廣島短片時間表與地圖</div>
-        <ul class="sub-sub-list horizontal-links">
+        <ul class="sub-sub-list">
             <li><a href="compeitionShortCN.html">中文</a></li>
             <li><a href="compeitionShortJAP.html">日文</a></li>
             <li><a href="compeitionShort.html">英文</a></li>
